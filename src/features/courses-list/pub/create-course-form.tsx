@@ -48,7 +48,7 @@ const CreateCourseForm = ({
             await courseCreateAction(revalidatePagePath, data);
           });
         })}
-        className={cn(className, "space-y-8")}
+        className={cn(className, "space-y-4")}
       >
         <FormField
           control={form.control}
@@ -82,7 +82,7 @@ const CreateCourseForm = ({
             </FormItem>
           )}
         />
-        <Button type="submit">Добавить</Button>
+        <Button className="top-8" type="submit">Добавить</Button>
       </form>
     </Form>
   );
